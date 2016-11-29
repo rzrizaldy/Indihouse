@@ -1,34 +1,192 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Indihouse - Room Services</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  body {background-color: #FAF2A5;}
-  </style>
-</head>
-<body>
+<html><head>
+    <title>Indihouse - Room Services</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      body {background-color: #FAF2A5;}
+            table {
+              border-collapse: collapse;
+              width: 100%;
+            }
+        
+            th, td {
+              text-align: left;
+              padding: 8px;
+            }
+        
+            td:nth-child(even){background-color: #FFA695}
+            td:nth-child(odd){background-color: #FFE5E0}
+        
+            th {
+              background-color: #8E1616;
+              color: white;
+            }
+    </style>
+  </head><body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="/RPL/Indihouse/" class="navbar-left"><img src="img/indihouse-brand.png" style="display: inline-block; width:250px;">
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a href="/RPL/Indihouse/" class="navbar-left" href="#"><img src="img/indihouse-brand.png" style="display: inline-block; width:250px;">
-  <span style="display: inline-block;"></span></a>
+          <span style="display: inline-block;"></span></a>
+        </div>
+        <ul class="nav navbar-nav navbar-left">
+          <li>
+            <a href="/RPL/Indihouse/allocation.html">ALLOCATION</a>
+          </li>
+          <li>
+            <a href="/RPL/Indihouse/reservation.html">RESERVATION</a>
+          </li>
+          <li class="active">
+            <a href="/RPL/Indihouse/services.html">SERVICES</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="section text-left">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="btn-toolbar" role="toolbar"></div>
+            <div class="btn-group" data-toggle="buttons">
+              <a class="btn btn-block btn-danger btn-lg dropdown-toggle" data-toggle="dropdown">SELECT ROOM </a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">Room 101</a>
+                </li>
+                <li>
+                  <a href="#">Room 102</a>
+                </li>
+                <li>
+                  <a href="#">Room 103</a>
+                </li>
+                <li>
+                  <a href="#">Room 104</a>
+                </li>
+                <li>
+                  <a href="#">Room 105</a>
+                </li>
+                <li>
+                  <a href="#">Room 201</a>
+                </li>
+                <li>
+                  <a href="#">Room 202</a>
+                </li>
+                <li>
+                  <a href="#">Room 203</a>
+                </li>
+                <li>
+                  <a href="#">Room 204</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <img src="img/services-big.png" alt="reservation" style="width:300px;">
+            </div>
+            <div class="col-md-8">
+              <form class="form-horizontal" role="form">
+                <div class="form-group has-feedback">
+                  <div class="col-sm-2">
+                    <label for="inputEmail3" class="control-label">Appetizer :</label>
+                  </div>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control input-sm" id="inputEmail3" placeholder="Choice of Appetizer">
+                    <span class="fa fa-check form-control-feedback"></span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-2">
+                    <label for="inputPassword3" class="control-label">Main Course :</label>
+                  </div>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control input-sm" id="inputPassword3" placeholder="Choice of Main Course">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-2">
+                    <label for="inputPassword3" class="control-label">Desserts :</label>
+                  </div>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control input-sm" id="inputPassword3" placeholder="Choice of Desserts">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-2">
+                    <label for="inputPassword3" class="control-label">Beverages :</label>
+                  </div>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control input-sm" id="inputPassword3" placeholder="Choice of Beverage">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-2">
+                    <label for="inputPassword3" class="control-label">Price (Rp.) :</label>
+                  </div>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control input-sm" id="inputPassword3" placeholder="Price (Rupiah)">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-2">
+                    <label for="inputPassword3" class="control-label">Request Time :</label>
+                  </div>
+                  <div class="col-sm-10">
+                    <input type="time" name="req">
+                  </div>
+                </div>
+              </form>
+              <a class="btn btn-success">Submit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel-body">
+        <table cellpadding="0" cellspacing="0" border="0" class="table table-bordered table-hover table-striped" id="example">
+          <thead>
+            <tr :hr="" class="">
+              <th>REQUEST TIME</th>
+              <th>ROOM</th>
+              <th>GUEST NAME</th>
+              <th>APPETIZERR</th>
+              <th>MAIN COURSE</th>
+              <th>DESSERTS</th>
+              <th>BEVERAGES</th>
+              <th>PRICE (Rp.)</th>
+              <th>CHANGE</th>
+              <th>DELETE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10:30 PM</td>
+              <td>Room 101</td>
+              <td>Kopunk</td>
+              <td>Babi</td>
+              <td>Bagong</td>
+              <td>Lemak</td>
+              <td>Darah</td>
+              <td>78.000</td>
+              <td>
+                <a class="btn btn-block btn-info">CHANGE</a>
+              </td>
+              <td>
+                <a class="btn btn-block btn-danger">DELETE</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    <ul class="nav navbar-nav navbar-left">
-      <li><a href="/RPL/Indihouse/allocation.html">ALLOCATION</a></li>
-      <li><a href="/RPL/Indihouse/reservation.html">RESERVATION</a></li>
-      <li class="active"><a href="/RPL/Indihouse/services.html">SERVICES</a></li>
-    </ul>
-    
-  </div>
-</nav>
+  
 
-
-
-</body>
-</html>
+</body></html>
